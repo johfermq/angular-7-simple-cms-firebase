@@ -1,1 +1,154 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body {
+	margin: 0;
+  	font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Images */
+img {
+  max-width: 100%;
+}
+
+.img-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* Masonry */
+.masonry-item {
+  width: 30.333333%;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .masonry-item {
+    width: 43.999997%;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .masonry-item {
+    width: 91.666667%;
+  }
+}
+
+/* Sidenav */
+.vh-100 {
+  height: 100vh;
+}
+
+.mat-sidenav {
+  width: 220px;
+}
+
+.mat-sidenav-content {
+  /* padding-top padding-right padding-bottom padding-left */
+  padding: 20px;
+}
+
+.user {
+  padding: 5px;
+  height: auto;
+  background: #8A2387;
+  background: -webkit-linear-gradient(top, #F27121, #E94057, #8A2387);
+  background: -o-linear-gradient(top, #F27121, #E94057, #8A2387);
+  background: linear-gradient(to top, #F27121, #E94057, #8A2387);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    .name {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.mat-list-item {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.mat-nav-list {
+  .mat-expansion-panel {
+    .mat-expansion-panel-header {
+      padding-left: 15px;
+    }
+
+    .mat-nav-list {
+      padding: 0px;
+
+      .mat-list-item {
+        padding: 0px;
+
+        .mat-icon {
+          font-size: 15px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+/* Gradient */
+.bg-gradient-front {
+	background: #a18cd1 no-repeat fixed center;
+	background: -moz-linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%) no-repeat fixed center;
+	background: -webkit-linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%) no-repeat fixed center;
+	background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%) no-repeat fixed center;
+}
+
+.bg-gradient-admin {
+	background: #fad0c4 no-repeat fixed center;
+	background: -moz-linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%) no-repeat fixed center;
+	background: -webkit-linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%) no-repeat fixed center;
+	background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%) no-repeat fixed center;
+}

@@ -1,0 +1,18 @@
+<div class="vh-100">
+
+	<front-navbar [title]="title" [user]="user" [menus]="menus" (navbarSidebar)="sidenav.toggle()"></front-navbar>
+
+	<mat-sidenav-container fxFlexFill>
+
+		<mat-sidenav #sidenav fxLayout="column">
+			<front-sidebar [user]="user" [menus]="menus"></front-sidebar>
+		</mat-sidenav>
+
+		<mat-sidenav-content fxLayout="column" fxFlexFill role="main" class="bg-gradient-front">
+
+			<router-outlet></router-outlet>
+
+		</mat-sidenav-content>
+
+	</mat-sidenav-container>
+</div>

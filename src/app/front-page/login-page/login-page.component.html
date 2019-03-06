@@ -1,0 +1,22 @@
+<div class="login">
+	<h2>Login account</h2>
+
+	<div class="user" *ngIf="user">
+		<h3>Hello, {{ user.displayName }}!</h3>
+		<img src="{{ user.photoURL }}">
+		<div>
+			<strong>Suscriber</strong>: {{ user.roles?.suscriber ? true : false }}
+		</div>
+		<div>
+			<strong>Admin</strong>: {{ user.roles?.admin ? true : false }}
+		</div>
+	</div>
+
+	<button mat-raised-button color="accent" (click)="login()" *ngIf="! user">
+		Login with Google
+	</button>
+</div>
+
+
+
+

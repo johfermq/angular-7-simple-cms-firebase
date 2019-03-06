@@ -1,0 +1,24 @@
+<div>
+	<div class="user mat-elevation-z8" *ngIf="user">
+		<img [src]="user.photoURL">
+		<div class="info">
+			<a [matMenuTriggerFor]="menu" class="name">
+				{{ user.displayName }}
+			</a>
+			<mat-menu #menu="matMenu" x-position="after" y-position="below" overlapTrigger="false">
+			  	<button mat-menu-item (click)="logout()">
+			    	<mat-icon aria-label="Example icon-button with a heart icon">
+			    		exit_to_app
+			    	</mat-icon>
+			    	Log Out
+			  	</button>
+			</mat-menu>
+		</div>
+	</div>
+</div>
+<mat-nav-list>
+	<a mat-list-item routerLink="/home/login" *ngIf="! user">Log In</a>
+	<a mat-list-item *ngFor="let link of links" [routerLink]="link.link">
+		{{ link.name }}
+	</a>
+</mat-nav-list>

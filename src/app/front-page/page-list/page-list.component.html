@@ -1,0 +1,19 @@
+<h2>Posts</h2>
+
+<ngx-masonry [options]="masonry">
+
+	<mat-card *ngFor="let page of pages | async" ngxMasonryItem class="masonry-item mat-elevation-z8">
+	  	<mat-card-title>{{ page.title }}</mat-card-title>
+	  	<mat-card-content>
+	    	<p>{{ page.description }}</p>
+	  	</mat-card-content>
+	  	<mat-card-actions>
+	    	<a mat-raised-button color="accent" [href]="page.url">
+		    	Show more...
+		    </a>
+	  	</mat-card-actions>
+	</mat-card>
+
+</ngx-masonry>
+
+

@@ -1,0 +1,18 @@
+<div class="vh-100">
+
+	<admin-navbar [title]="title" (navbarSidebar)="sidenav.toggle()"></admin-navbar>
+
+	<mat-sidenav-container fxFlexFill>
+
+		<mat-sidenav #sidenav fxLayout="column">
+			<admin-sidebar [user]="user"></admin-sidebar>
+		</mat-sidenav>
+
+		<mat-sidenav-content fxLayout="column" fxFlexFill role="main" class="bg-gradient-admin">
+
+			<router-outlet></router-outlet>
+
+		</mat-sidenav-content>
+
+	</mat-sidenav-container>
+</div>

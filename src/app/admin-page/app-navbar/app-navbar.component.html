@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+	<mat-toolbar-row>
+		<button mat-icon-button (click)="openSidebar()" fxShow="true">
+    		<mat-icon>menu</mat-icon>
+  		</button>
+	    <span>{{ title }}</span>
+
+	    <span class="mat-toolbar-row--spacer"></span>
+
+		<!-- The following menu items will be visibles on all screen sizes -->
+	    <div fxShow="true">
+	    	<button mat-button routerLink="/">Home</button>
+	    </div>
+  	</mat-toolbar-row>
+</mat-toolbar>
